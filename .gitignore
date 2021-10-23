@@ -52,5 +52,5 @@ Mkfile.old
 dkms.conf
 
 # build / bin folders
-build/
+src/obj
 bin/

@@ -5,13 +5,10 @@
   "tasks": [
     {
       "type": "shell",
-      "label": "clang build active file",
-      "command": "/usr/bin/clang",
+      "label": "make project",
+      "command": "make",
       "args": [
-        "-g",
-        "${file}",
-        "-o",
-        "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+        "debug"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
