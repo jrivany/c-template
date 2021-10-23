@@ -15,10 +15,10 @@ BINDIR := bin
 CC = clang
 
 # libraries to link with
-LIBS=
+LIBS=$(shell pkg-config --libs sdl2)
 
 # compiter flags
-CFLAGS = -Wall -Wextra -Werror -pedantic -I$(IDIR) 
+CFLAGS = -Wall -Wextra -Werror -pedantic -I$(IDIR) $(shell pkg-config --cflags sdl2)
 
 # linker flags
 LDFLAGS := $(LIBS)
