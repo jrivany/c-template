@@ -2,11 +2,7 @@
 
 Install the CodeLLDB extension found [here](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 
-Create the output folder:
-
-```
-mkdir -p bin
-```
+Install clangd for better code completion found [here](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
 
 # Running
 
