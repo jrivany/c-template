@@ -1,3 +1,7 @@
+# Intro
+
+A bare bones makefile based c project template for OSX with some extra configurations for vscode.
+
 # Setup
 
 Install clangd for better code completion found [here](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
