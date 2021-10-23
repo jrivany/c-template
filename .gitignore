@@ -54,3 +54,5 @@ dkms.conf
 # build / bin folders
 src/obj
 bin/
+
+compile_flags.txt

@@ -30,7 +30,7 @@ OBJECTS = $(patsubst $(SDIR)/%$(SRCEXT),$(ODIR)/%.o,$(wildcard $(SDIR)/*$(SRCEXT
 
 # ensure that all required directories exist and build executable
 .PHONY: build
-build: directories executable
+build: compileflags directories executable
 
 .PHONY: debug
 debug: CFLAGS += -g -O0 -DDEBUG
@@ -62,3 +62,6 @@ clean:
 directories:
 	@mkdir -p $(ODIR)
 	@mkdir -p $(BINDIR)
+
+compileflags:
+	$(shell echo $(LDFLAGS) $(CFLAGS) | tr ' ' '\n' > compile_flags.txt)
