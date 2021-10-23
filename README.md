@@ -10,8 +10,4 @@ Disable the default c++ intellisense in settings.json (clangd should already pro
 
 # Running
 
-Open `src/main.c`.
-
-From the debug tab, click run.
-
-Profit.
+Run the launch target from the Run/Debug tab.
